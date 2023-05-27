@@ -1,19 +1,20 @@
+@import 'imports/functions';
+
 :root {
     --black: #1a1a1a;
     --white: #dadada;
+    --red: #a80000;
+    --app-width: 1200px;
 }
 
-body.theme-dark {
-    --bg-color: #1a1a1a;
-    --txt-color: #dadada;
+* {
+    box-sizing: border-box;
 }
 
-body.theme-light {
-    --bg-color: #dadada;
-    --txt-color: #1a1a1a;
+a {
+    text-decoration: none;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--txt-color);
+.body-width {
+    width: css-min(100%, var(--app-width));
 }

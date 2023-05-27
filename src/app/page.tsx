@@ -1,11 +1,7 @@
-import { Body } from '../components/Body'
+import React from 'react'
 
-export default function Home({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Home() {
   return (
-    <Body>{children}</Body>
+    <>cycki</>
   )
 }
