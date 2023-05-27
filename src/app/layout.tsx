@@ -25,6 +25,7 @@ export default function RootLayout({
               <ul>
                 <li><a href="/"><Icon name='flask-sharp' /> Laboratorium</a></li>
                 <li><a href="library"><Icon name='library-sharp' /> Biblioteka</a></li>
+                <li><a href="authorization"><Icon name='library-sharp' /> Autoryzacja</a></li>
               </ul>
             </nav>
           </header>
