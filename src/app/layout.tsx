@@ -1,7 +1,7 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+'use client'
+import { useState } from 'react'
+import '../styles/globals.scss'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,9 +13,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [theme, setTheme] = useState('dark');
+
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pl">
+      <body className={`theme-${theme}`}>
+        <header>
+          <button onClick={() => {
+            if(theme === 'dark') setTheme('light');
+            else setTheme('dark')
+          }}>Zmień motyw</button>
+        </header>
+        <main>{children}</main>
+        <aside>Bok</aside>
+        <footer>Stopka</footer>
+      </body>
     </html>
   )
 }

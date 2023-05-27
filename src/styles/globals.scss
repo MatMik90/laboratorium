@@ -1,0 +1,19 @@
+:root {
+    --black: #1a1a1a;
+    --white: #dadada;
+}
+
+body.theme-dark {
+    --bg-color: #1a1a1a;
+    --txt-color: #dadada;
+}
+
+body.theme-light {
+    --bg-color: #dadada;
+    --txt-color: #1a1a1a;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
